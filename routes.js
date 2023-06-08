@@ -8,7 +8,7 @@ const ROUTES = [
             max: 5
         },
         proxy: {
-            target: "https://vnexpress.net",
+            target: "https://xoay.online",
             changeOrigin: true,
             pathRewrite: {
                 [`^/free`]: '',
