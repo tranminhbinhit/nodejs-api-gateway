@@ -1,5 +1,17 @@
 const ROUTES = [
     {
+        url: '/mantine',
+        auth: false,
+        creditCheck: false,
+        proxy: {
+            target: "https://mantine.dev",
+            changeOrigin: true,
+            pathRewrite: {
+                [`^/mantine`]: '',
+            },
+        }
+    },
+    {
         url: '/soppi',
         auth: false,
         creditCheck: false,
