@@ -1,45 +1,72 @@
-
 const ROUTES = [
     {
-        url: '/sopi',
+        url: '/soppi',
         auth: false,
         creditCheck: false,
         proxy: {
-            target: "http://shopee.vn",
+            target: "https://vnexpress.net",
             changeOrigin: true,
             pathRewrite: {
-                [`^/sopi`]: '',
+                [`^/soppi`]: '',
             },
         }
     },
     {
-        url: '/free',
+        url: '/api-lucky',
         auth: false,
         creditCheck: false,
-        // rateLimit: {
-        //     windowMs: 15 * 60 * 1000,
-        //     max: 5
-        // },
         proxy: {
             target: "https://api-main.byn.vn",
             changeOrigin: true,
             pathRewrite: {
-                [`^/free`]: '',
+                [`^/api-lucky`]: '',
             },
         }
     },
-    {
-        url: '/premium',
-        auth: true,
-        creditCheck: true,
-        proxy: {
-            target: "https://www.google.com",
-            changeOrigin: true,
-            pathRewrite: {
-                [`^/premium`]: '',
-            },
-        }
-    },
+    // {
+    //     url: '/free',
+    //     auth: false,
+    //     creditCheck: false,
+    //     // rateLimit: {
+    //     //     windowMs: 15 * 60 * 1000,
+    //     //     max: 5
+    //     // },
+    //     proxy: {
+    //         target: "https://api-main.byn.vn",
+    //         changeOrigin: true,
+    //         pathRewrite: {
+    //             [`^/free`]: '',
+    //         },
+    //     }
+    // },
+    // {
+    //     url: '/free',
+    //     auth: false,
+    //     creditCheck: false,
+    //     rateLimit: {
+    //         windowMs: 15 * 60 * 1000,
+    //         max: 5
+    //     },
+    //     proxy: {
+    //         target: "https://vnexpress.net",
+    //         changeOrigin: true,
+    //         pathRewrite: {
+    //             [`^/free`]: '',
+    //         },
+    //     }
+    // },
+    // {
+    //     url: '/premium',
+    //     auth: true,
+    //     creditCheck: true,
+    //     proxy: {
+    //         target: "https://www.google.com",
+    //         changeOrigin: true,
+    //         pathRewrite: {
+    //             [`^/premium`]: '',
+    //         },
+    //     }
+    // },
 ]
 
 exports.ROUTES = ROUTES;
