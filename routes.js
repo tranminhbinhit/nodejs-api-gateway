@@ -8,7 +8,7 @@ const ROUTES = [
             max: 5
         },
         proxy: {
-            target: "https://www.google.com",
+            target: "https://vnexpress.net",
             changeOrigin: true,
             pathRewrite: {
                 [`^/free`]: '',
@@ -26,7 +26,7 @@ const ROUTES = [
                 [`^/premium`]: '',
             },
         }
-    }
+    },
 ]
 
 exports.ROUTES = ROUTES;
