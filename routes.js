@@ -1,6 +1,18 @@
 
 const ROUTES = [
     {
+        url: '/sopi',
+        auth: false,
+        creditCheck: false,
+        proxy: {
+            target: "http://shopee.vn",
+            changeOrigin: true,
+            pathRewrite: {
+                [`^/sopi`]: '',
+            },
+        }
+    },
+    {
         url: '/free',
         auth: false,
         creditCheck: false,
