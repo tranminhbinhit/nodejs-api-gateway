@@ -1,13 +1,13 @@
 const ROUTES = [
     {
-        url: '/mantine',
+        url: '/cdnbyn',
         auth: false,
         creditCheck: false,
         proxy: {
-            target: "https://mantine.dev",
+            target: "https://cdn.byn.vn",
             changeOrigin: true,
             pathRewrite: {
-                [`^/mantine`]: '',
+                [`^/cdnbyn`]: '',
             },
         }
     },
