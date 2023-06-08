@@ -17,7 +17,14 @@ setupRateLimit(app, ROUTES);
 setupAuth(app, ROUTES);
 setupCreditCheck(app, ROUTES);
 setupProxies(app, ROUTES);
-
+app.get(
+    "/",
+    function (request, response) {
+      response.sendFile(
+        __dirname + "/static/welcome-page.html"
+      );
+    }
+  );
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
