@@ -28,10 +28,22 @@ const ROUTES = [
         auth: false,
         creditCheck: false,
         proxy: {
-            target: "https://api-main.byn.vn",
+            target: "https://api-lucky.byn.vn",
             changeOrigin: true,
             pathRewrite: {
                 [`^/api-lucky`]: '',
+            },
+        }
+    },
+    {
+        url: '/api-main',
+        auth: false,
+        creditCheck: false,
+        proxy: {
+            target: "https://api-main.byn.vn",
+            changeOrigin: true,
+            pathRewrite: {
+                [`^/api-main`]: '',
             },
         }
     },
