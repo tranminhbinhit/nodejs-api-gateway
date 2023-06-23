@@ -47,6 +47,18 @@ const ROUTES = [
             },
         }
     },
+    {
+        url: '/api-enow',
+        auth: false,
+        creditCheck: false,
+        proxy: {
+            target: "https://api.byn.vn",
+            changeOrigin: true,
+            pathRewrite: {
+                [`^/api-enow`]: '',
+            },
+        }
+    },
     // {
     //     url: '/free',
     //     auth: false,
